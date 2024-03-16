@@ -1,3 +1,4 @@
+
 body{
   margin: 0;
   padding: 0;
@@ -219,3 +220,42 @@ a:hover {
   color: black;
   background: transparent;
 }
+
+.cardText {
+  font-size: 12px;
+}
+@media (max-width: 768px) {
+  .cardText{
+    font-size: 12px;
+  }
+  
+}
+
+@media (max-width :768px){
+  .footIcon{
+  
+   margin-left: 190PX;
+  }
+  
+}
+
+
+
+                                /* Login Page  */
+.loginSec{
+  border: 1px solid black;
+}
+
+.gradient-custom {
+  /* fallback for old browsers */
+  /* background: #e3dac9 */
+  background: white;
+  
+  
+ 
+  }
+
+  .form-check-input:checked{
+    background-color: black;
+      border-color: black;
+  }

@@ -98,7 +98,7 @@
 
       <!-- Mobile View -->
       <div class="container-fluid text-center">
-        <div class="row align-items-center justify-content-evenly">
+        <div class="row align-items-center justify-content-center">
           <!-- Dropdown Button for Mobile -->
           <div class="col-3 d-md-block d-lg-none ms-3 me-0">
             <div class="dropdown ">
@@ -165,152 +165,95 @@
 
   </div>
 
-  <!-- <section>
-    <div class="container align-items-center text-center">
-      <div class="row">
-        <div class="col-12 poppins-medium">
-          <div class="btn boxBg">All</div>
-          <div class="btn boxBg">Item 1</div>
-          <div class="btn boxBg">Item 2</div>
-          <div class="btn boxBg">Item 3</div>
-          <div class="btn boxBg">Item4</div>
-          <div class="btn boxBg">Item 5</div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
-   <!-- banner  -->
-
-   <section class="mb-5">
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="/assets/Images/banner.png" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="/assets/Images/banner2.png" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="/assets/Images/banner3.png" class="d-block w-100" alt="...">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-   </section>
-   
-
-  <section>
-    <div class="container-fluid align-items-center mt-4">
-      <div class="row">
-        <div class="col-12 poppins-medium">
-          <div class="btn boxBg">All</div>
-          <div class="btn boxBg">Item 1</div>
-          <div class="btn boxBg">Item 2</div>
-          <div class="btn boxBg">Item 3</div>
-          <div class="btn boxBg">Item4</div>
-          <div class="btn boxBg">Item 5</div>
+  <section class=" gradient-custom mb-5">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+          <div class="card  text-black mb-5" style="border-radius: 0; border: px solid black; background: white; box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.228);"> 
+            <div class="card-body p-5 text-center">
+  
+              <div class="mb-md-5 mt-md-4 pb-5">
+                <img src="/assets/Images/logowrk.png" width="250px" alt="">
+  
+                <!-- <h2 class="fw-bold mb-2 text-uppercase">Login</h2> -->
+                <p class="text-black-50 mb-5">Please enter your login and password!</p>
+  
+                <form class="row g-3" id="AdrsForm" action="/views/User/Home.html">
+                    
+                    <div class="col-12">
+                      
+                      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                    </div>
+                    <div class="col-12">
+                      <!-- <label for="inputAddress2" class="form-label">Address 2</label> -->
+                      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                    </div>
+                    <div class="col-md-6">
+                      <!-- <label for="inputCity" class="form-label">City</label> -->
+                      <input type="text" class="form-control" id="inputCity" placeholder="City">
+                    </div>
+                    <div class="col-md-6">
+                      <!-- <label for="inputState" class="form-label">State</label> -->
+                      <select id="inputState" class="form-select" >
+                        <option selected>Choose State</option>
+                        <option>...</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6">
+                        <!-- <label for="inputZip" class="form-label">Zip</label> -->
+                        <input type="text" class="form-control" id="inputZip" placeholder="LandMark">
+                      </div>
+                      <div class="col-md-6">
+                        <!-- <label for="inputZip" class="form-label">Zip</label> -->
+                        <input type="text" class="form-control" id="inputZip" placeholder="Zip">
+                      </div>
+                      <h6 class="pt-3 text-start">  Your Gender</h6>
+                      <div class="mb-3 col-6 gap-4 d-flex">
+                       
+                        <div class="form-check  " >
+                          <input class="form-check-input"  type="radio" name="Radios"   value="male">
+                          <label class="form-check-label" for="exampleRadios1">
+                            Male
+                          </label>
+                        </div>
+                        <div class="form-check" >
+                          <input class="form-check-input" type="radio" name="Radios"  value="female" > 
+                          <label class="form-check-label" for="exampleRadios2">
+                           Female
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="Radios"  value="others"  >
+                          <label class="form-check-label" for="exampleRadios3">
+                            Other
+                          </label>
+                        </div>
+                      </div>
+                    
+                   
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-dark px-5 btn-lg text-uppercase fw-semibold" onclick="signUp()">Sign Up</button>
+                    </div>
+                  </form>
+                <div class="d-flex justify-content-center text-center mt-4 pt-1">
+                  <a href="#!" class="text-black"><i class="fab fa-facebook-f fa-lg"></i></a>
+                  <a href="#!" class="text-black"><i class="fab fa-twitter fa-lg mx-4 px-2"></i></a>
+                  <a href="#!" class="text-black"><i class="fab fa-google fa-lg"></i></a>
+                </div>
+  
+              </div>
+  
+              <div>
+                <p class="mb-0">Already have an account? <a href="/views/User/login.html" class=" fw-bold">Login</a>
+                </p>
+              </div>
+  
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
-
-
-  <section class="mt-1 ms-5 me-3 d-flex gap-4 ">
-  <div class="container-fluid ">
-    <div class="row">
-      <div class="card mt-4 cardItem container-fluid " style="width: 15rem;">
-        <img src="/assets/Images/card_img.png" class="card-img-top" alt="...">
-        <div class="card-body">
-            <div class="wishlist-container " >
-                <a href="" class="btn wishlist-btn text-center  " style="margin-top: -62px;"><span class="material-symbols-outlined">
-                    favorite
-                    </span>Whishlist</a>
-            </div>
-            <h6 class="card-title poppins-semibold">Product 1</h6>
-            <p class="card-text poppins-light cardText" >Some quick example content.</p>
-            <p class="cardText" style=" margin-top: -13px;"><span class="fw-bold">Rs.1999</span> <span style="text-decoration: line-through; color: rgba(0, 0, 0, 0.537);"> Rs.3999</span> <span style="color: #6f4e37ae;">(Rs.2000 OFF)</span></p>
-        </div>
-      </div>
-      <div class="card mt-4 cardItem container-fluid " style="width: 15rem;">
-        <img src="/assets/Images/card_img.png" class="card-img-top" alt="...">
-        <div class="card-body">
-            <div class="wishlist-container " >
-                <a href="" class="btn wishlist-btn text-center  " style="margin-top: -62px;"><span class="material-symbols-outlined">
-                    favorite
-                    </span>Whishlist</a>
-            </div>
-            <h6 class="card-title poppins-semibold">Product 2</h6>
-            <p class="card-text poppins-light cardText" >Some quick example content.</p>
-            <p class="cardText" style=" margin-top: -13px;"><span class="fw-bold">Rs.1999</span> <span style="text-decoration: line-through; color: rgba(0, 0, 0, 0.537);"> Rs.3999</span> <span style="color: #6f4e37ae;">(Rs.2000 OFF)</span></p>
-        </div>
-      </div>
-      <div class="card mt-4 cardItem container-fluid " style="width: 15rem;">
-        <img src="/assets/Images/card_img.png" class="card-img-top" alt="...">
-        <div class="card-body">
-            <div class="wishlist-container " >
-                <a href="" class="btn wishlist-btn text-center  " style="margin-top: -62px;"><span class="material-symbols-outlined">
-                    favorite
-                    </span>Whishlist</a>
-            </div>
-            <h6 class="card-title poppins-semibold">Product 3</h6>
-            <p class="card-text poppins-light cardText" >Some quick example content.</p>
-            <p class="cardText" style=" margin-top: -13px;"><span class="fw-bold">Rs.1999</span> <span style="text-decoration: line-through; color: rgba(0, 0, 0, 0.537);"> Rs.3999</span> <span style="color: #6f4e37ae;">(Rs.2000 OFF)</span></p>
-        </div>
-      </div>
-      <div class="card mt-4 cardItem container-fluid " style="width: 15rem;">
-        <img src="/assets/Images/card_img.png" class="card-img-top" alt="...">
-        <div class="card-body">
-            <div class="wishlist-container " >
-                <a href="" class="btn wishlist-btn text-center  " style="margin-top: -62px;"><span class="material-symbols-outlined">
-                    favorite
-                    </span>Whishlist</a>
-            </div>
-            <h6 class="card-title poppins-semibold">Product 4</h6>
-            <p class="card-text poppins-light cardText" >Some quick example content.</p>
-            <p class="cardText" style=" margin-top: -13px;"><span class="fw-bold">Rs.1999</span> <span style="text-decoration: line-through; color: rgba(0, 0, 0, 0.537);"> Rs.3999</span> <span style="color: #6f4e37ae;">(Rs.2000 OFF)</span></p>
-        </div>
-      </div>
-      <div class="card mt-4 cardItem container-fluid " style="width: 15rem;">
-        <img src="/assets/Images/card_img.png" class="card-img-top" alt="...">
-        <div class="card-body">
-            <div class="wishlist-container " >
-                <a href="" class="btn wishlist-btn text-center  " style="margin-top: -62px;"><span class="material-symbols-outlined">
-                    favorite
-                    </span>Whishlist</a>
-            </div>
-            <h6 class="card-title poppins-semibold">Product 5</h6>
-            <p class="card-text poppins-light cardText" >Some quick example content.</p>
-            <p class="cardText" style=" margin-top: -13px;"><span class="fw-bold">Rs.1999</span> <span style="text-decoration: line-through; color: rgba(0, 0, 0, 0.537);"> Rs.3999</span> <span style="color: #6f4e37ae;">(Rs.2000 OFF)</span></p>
-        </div>
-      </div>
-      <div class="card mt-4 cardItem container-fluid " style="width: 15rem;">
-        <img src="/assets/Images/card_img.png" class="card-img-top" alt="...">
-        <div class="card-body">
-            <div class="wishlist-container " >
-                <a href="" class="btn wishlist-btn text-center  " style="margin-top: -62px;"><span class="material-symbols-outlined">
-                    favorite
-                    </span>Whishlist</a>
-            </div>
-            <h6 class="card-title poppins-semibold">Product 6</h6>
-            <p class="card-text poppins-light cardText" >Some quick example content.</p>
-            <p class="cardText" style=" margin-top: -13px;"><span class="fw-bold">Rs.1999</span> <span style="text-decoration: line-through; color: rgba(0, 0, 0, 0.537);"> Rs.3999</span> <span style="color: #6f4e37ae;">(Rs.2000 OFF)</span></p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  
-   
-  </section>
-  
 
  
 
@@ -324,23 +267,24 @@
               <!--Grid row-->
               <div class="row my-4">
                 <!--Grid column-->
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <div class="col-lg-3 col-md-4 mb-4 mb-md-0">
         
-                  <div class=" bg-white shadow-1-strong d-flex  justify-content-center " style="width: 150px; height: 150px;">
+                  <div class=" bg-white shadow-1-strong d-flex  justify-content-center mx-sm-auto mx-auto mx-md-0" style="width: 150px; height: 150px;">
                     <img src="/assets/Images/logowrk.png" height="70" alt=""
                           />
                   </div>
         
                   <p class="" style="margin-top: -70px; margin-left: -8px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
         
-                  <ul class="list-unstyled d-flex flex-row " style="margin-left: -14px;">
+                 <div class="  ">
+                  <ul class="list-unstyled d-flex flex-row  gap-2 mx-sm-auto " style="margin-left: -8px;">
                     <li>
-                      <a class=" px-2" href="#!">
+                      <a class=" pe-2 " href="#!">
                         <i class="fab fa-facebook-square"></i>
                       </a>
                     </li>
                     <li>
-                      <a class=" px-2" href="#!">
+                      <a class=" " href="#!">
                         <i class="fab fa-instagram"></i>
                       </a>
                     </li>
@@ -350,6 +294,7 @@
                       </a>
                     </li>
                   </ul>
+                 </div>
         
                 </div>
                 <!--Grid column-->
@@ -433,6 +378,11 @@
   
         
 
+      <script>
+        function signUp(){
+            window.location.href="/views/User/Home.html"
+        }
+      </script>
  
 
  
