@@ -40,20 +40,20 @@
             </a>
           </div>
           <!-- Search Form -->
-          <div class="me-0 col-lg-4 d-lg-block d-none ">
+          <div class="me-0 col-3 col-lg-4 d-lg-block d-none ">
             <form class="search-form" action="#">
-              <div class="d-flex align-items-center">
+              <div class="d-flex align-items-center" style="border: 1px solid rgba(0, 0, 0, 0.119);">
                 <span class="material-symbols-outlined me-2">
                   search
                   </span>
-                <input type="text" class="form-control" placeholder="Search entire store..." />
+                <input type="text" class="form-control" style="border-radius: 0;" placeholder="Search entire store..." />
               
               </div>             
               
             </form>
           </div>
           <!-- Navigation Menu -->
-          <div class="me-0 col-lg-6  d-lg-block d-none  mt-2">
+          <div class="me-0 col-lg-6 col-6 d-lg-block d-none  mt-2">
             <nav class="menu-style">
               <ul class="menu-style poppins-medium text-uppercase">
                 <a href="">
@@ -96,47 +96,52 @@
       </div>
       <!-- End Desktop View -->
 
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="" >
+            <li class="d-flex mt-2 mb-2 ms-3"><span class="material-symbols-outlined me-1">
+              shopping_cart
+              </span>Cart</li>
+          </a>
+          <a href="">
+            <li class="d-flex mb-2 ms-3"><span class="material-symbols-outlined me-1">
+              favorite
+              </span>Whishlist</li>
+          </a>
+          <a href="">
+            <li class="d-flex mb-2 ms-3"><span class="material-symbols-outlined me-1">
+              package_2
+              </span>Orders</li>
+          </a>
+          <a href="">
+            <li class="d-flex mb-2 ms-3"><span class="material-symbols-outlined me-1">
+              person
+              </span>Profile</li>
+          </a>
+          <a href="">
+            <li class="d-flex mb-2 ms-3"><span class="material-symbols-outlined me-1">
+              settings
+              </span>Settings</li>
+           </a>
+           <a href="/views/User/login.html">
+            <li class="btn btn-dark fw-semibold px-4 ms-3 mt-3 mb-2" style="margin-top: -7px; border-radius: 0;">Login
+            </li>
+          </a> 
+
+      </div>
+
       <!-- Mobile View -->
       <div class="container-fluid text-center">
-        <div class="row align-items-center justify-content-center">
+        <div class="row align-items-center justify-content-evenly">
           <!-- Dropdown Button for Mobile -->
           <div class="col-3 d-md-block d-lg-none ms-3 me-0">
             <div class="dropdown ">
-              <button class="btn  " type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <box-icon name='menu'></box-icon>
-              </button>
+                <button class="openbtn" onclick="openNav()"><span class="material-symbols-outlined">
+                    menu
+                    </span></button>  
+
               <!-- Dropdown Menu -->
-              <ul class="dropdown-menu ">
-                <a href="" >
-                  <li class="d-flex mt-2 mb-2"><span class="material-symbols-outlined">
-                    shopping_cart
-                    </span>Cart</li>
-                </a>
-                <a href="">
-                  <li class="d-flex mb-2"><span class="material-symbols-outlined">
-                    favorite
-                    </span>Whishlist</li>
-                </a>
-                <a href="">
-                  <li class="d-flex mb-2"><span class="material-symbols-outlined">
-                    package_2
-                    </span>Orders</li>
-                </a>
-                <hr>
-                <a href="">
-                  <li class="d-flex mb-2"><span class="material-symbols-outlined">
-                    person
-                    </span>Profile</li>
-                </a>
-               <a href="">
-                <li class="d-flex mb-2"><span class="material-symbols-outlined">
-                  settings
-                  </span>Settings</li>
-               </a>
-               <a href="/views/User/login.html">
-                <li class="btn btn-dark fw-semibold px-4" style="margin-top: -7px; border-radius: 0;">Login
-                </li>
-              </a> </ul>
+             
             </div>
             
           </div>
@@ -147,9 +152,9 @@
           </div>
           <div class="col-4 d-md-block d-lg-none pe-3 ms-auto me-0 col-md-4">
             <box-icon name='cart'></box-icon>
-            <a href="/views/User/login.html" class="btn btn-dark fw-semibold ms-1" style="margin-top: -7px; border-radius: 0;">
+            <!-- <a href="/views/User/login.html" class="btn btn-dark fw-semibold ms-1" style="margin-top: -7px; border-radius: 0;">
               Login
-            </a>
+            </a> -->
            
           </div>
           <div class=" col-4 d-md-block d-lg-none col-md-4">
@@ -268,33 +273,33 @@
  
 
      <!-- footer  -->
-        <div class="container-fluid my-5 ">
-          <hr>
+     <div class="container-fluid my-5 ">
+      <hr>
 
-          <footer class=" text-center text-lg-start poppins-medium " >
-            <!-- Grid container -->
-            <div class="container p-4">
-              <!--Grid row-->
-              <div class="row my-4">
-                <!--Grid column-->
-                <div class="col-lg-3 col-md-4 mb-4 mb-md-0">
-        
-                  <div class=" bg-white shadow-1-strong d-flex  justify-content-center mx-sm-auto mx-auto mx-md-0" style="width: 150px; height: 150px;">
-                    <img src="/assets/Images/logowrk.png" height="70" alt=""
-                          />
-                  </div>
-        
-                  <p class="" style="margin-top: -70px; margin-left: -8px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-        
-                 <div class="  ">
-                  <ul class="list-unstyled d-flex flex-row  gap-2 mx-sm-auto " style="margin-left: -8px;">
+      <footer class=" text-center text-lg-start poppins-medium " >
+        <!-- Grid container -->
+        <div class="container p-4">
+          <!--Grid row-->
+          <div class="row my-4">
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+    
+              <div class=" bg-white shadow-1-strong d-flex  justify-content-center mx-auto mx-sm-auto mx-lg-0 " style="width: 150px; height: 150px;">
+                <img src="/assets/Images/logowrk.png" height="70" alt=""
+                      />
+              </div>
+    
+              <p class="" style="margin-top: -70px; margin-left: -8px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+    
+             <div class="mx-auto d-flex justify-content-center">
+                <ul class="list-unstyled d-flex flex-row  " style="margin-left: -14px;">
                     <li>
-                      <a class=" pe-2 " href="#!">
+                      <a class=" px-2" href="#!">
                         <i class="fab fa-facebook-square"></i>
                       </a>
                     </li>
                     <li>
-                      <a class=" " href="#!">
+                      <a class=" px-2" href="#!">
                         <i class="fab fa-instagram"></i>
                       </a>
                     </li>
@@ -304,87 +309,103 @@
                       </a>
                     </li>
                   </ul>
-                 </div>
-        
-                </div>
-                <!--Grid column-->
-        
-                <!--Grid column-->
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0 ">
-                  <h5 class="text-uppercase mb-4 ms-4">Links</h5>
-        
-                  <ul class="list-unstyled">
-                    <li class="mb-2">
-                      <a href="#!" class="ms-4">Terms of Services</a>
-                    </li>
-                    <li class="mb-2">
-                      <a href="#!" class="ms-4">Privacy Policy</a>
-                    </li>
-                    <li class="mb-2">
-                      <a href="#!" class="ms-4">Contact Us</a>
-                    </li>
-                    <li class="mb-2">
-                      <a href="#!" class="ms-4">About Us</a>
-                    </li>
-                   
-                  </ul>
-                </div>
-                <!--Grid column-->
-        
-                <!--Grid column-->
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                  <h5 class="text-uppercase mb-4">Community</h5>
-        
-                  <ul class="list-unstyled">
-                    <li class="mb-2">
-                      <a href="#!" class="">Discord</a>
-                    </li>
-                    <li class="mb-2">
-                      <a href="#!" class="">Telegram</a>
-                    </li>
-                    <li class="mb-2">
-                      <a href="#!" class="">Whatsapp</a>
-                    </li>
-                    <li class="mb-2">
-                      <a href="#!" class="">Reddit</a>
-                    </li>
-                    
-                  </ul>
-                </div>
-                <!--Grid column-->
-        
-                <!--Grid column-->
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                  <h5 class="text-uppercase mb-4">Contact</h5>
-        
-                  <ul class="list-unstyled">
-                    <li>
-                      <p><i class="fas fa-map-marker-alt pe-2"></i>Warsaw, 57 Street, Poland</p>
-                    </li>
-                    <li>
-                      <p><i class="fas fa-phone pe-2"></i>+ 01 234 567 89</p>
-                    </li>
-                    <li>
-                      <p><i class="fas fa-envelope pe-2 mb-0"></i>contact@example.com</p>
-                    </li>
-                  </ul>
-                </div>
-                <!--Grid column-->
-              </div>
-              <!--Grid row-->
+             </div>
+    
             </div>
-            <!-- Grid container -->
-        
-            <!-- Copyright -->
-            <div class="text-center p-3 text-white" style="background-color: rgb(0, 0, 0)">
-              © 2024 Copyright:
-              <a class="" style="color: #ffffff;" href="https://mdbootstrap.com/">Elegantpurse.com</a>
+            <!--Grid column-->
+    
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0 ">
+              <h5 class="text-uppercase mb-4 ms-4">Links</h5>
+    
+              <ul class="list-unstyled">
+                <li class="mb-2">
+                  <a href="#!" class="ms-4">Terms of Services</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#!" class="ms-4">Privacy Policy</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#!" class="ms-4">Contact Us</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#!" class="ms-4">About Us</a>
+                </li>
+               
+              </ul>
             </div>
-            <!-- Copyright -->
-          </footer>
-
-         
+            <!--Grid column-->
+    
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase mb-4">Community</h5>
+    
+              <ul class="list-unstyled">
+                <li class="mb-2">
+                  <a href="#!" class="">Discord</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#!" class="">Telegram</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#!" class="">Whatsapp</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#!" class="">Reddit</a>
+                </li>
+                
+              </ul>
+            </div>
+            <!--Grid column-->
+    
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase mb-4">Contact</h5>
+    
+              <ul class="list-unstyled">
+                <li>
+                  <p><i class="fas fa-map-marker-alt pe-2"></i>Warsaw, 57 Street, Poland</p>
+                </li>
+                <li>
+                  <p><i class="fas fa-phone pe-2"></i>+ 01 234 567 89</p>
+                </li>
+                <li>
+                  <p><i class="fas fa-envelope pe-2 mb-0"></i>contact@example.com</p>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
         </div>
+        <!-- Grid container -->
+    
+        <!-- Copyright -->
+        <div class="text-center p-3 text-white" style="background-color: rgb(0, 0, 0)">
+          © 2024 Copyright:
+          <a class="" style="color: #ffffff;" href="https://mdbootstrap.com/">Elegantpurse.com</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+
+     
+    </div>
+
+    
+
+
+    <script>
+        function openNav() {
+          document.getElementById("mySidebar").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidebar").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+        }
+        </script>
+
   
         
 
