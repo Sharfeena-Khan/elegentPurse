@@ -1,192 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Product</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Product</title>
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
 
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="/assets/styles/userStyles.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/assets/styles/userStyles.css" />
 
-  <!-- Favicon -->
-  <link rel="shortcut icon" type="image/x-icon" href="/assets/Images/icons8-favicon-64.png" />
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="/assets/Images/icons8-favicon-64.png"
+    />
 
-  <!-- Font Awesome Icons -->
-  <script src="https://kit.fontawesome.com/b3d0fe1f35.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- Font Awesome Icons -->
+    <script
+      src="https://kit.fontawesome.com/b3d0fe1f35.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
 
-  <!-- Boxicons -->
-  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <!-- Boxicons -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
-  <!-- Google Fonts  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-</head>
+    <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-  <div class="main align-items-center" style="margin-bottom: 70px; ">
-    <header class="sticky-bar stick pt-3  ">
-      <!-- Desktop View -->
-      <div class="container-fluid px-5   ">
-        <div class="row  " >
-          <!-- Logo -->
-          <div class="col-2 d-lg-block d-none  " style="margin-left: -10px;">
-            <a href="./Home.html">
-              <img src="/assets/Images/logowrk.png" class="img-fluid " style="width:150px ;margin-top: -8px;" alt="" />
-            </a>
-          </div>
-          <!-- Search Form -->
-          <div class="col-3 col-lg-3 col-xl-3 col-xxl-4 d-lg-block d-none ">
-            <form class="search-form" action="#">
-              <div class="d-flex align-items-center" style="border: 1px solid rgba(0, 0, 0, 0.119);">
-                <span class="material-symbols-outlined mx-1">
-                  search
-                  </span>
-                <input type="text" class="form-control" style="border-radius: 0;" placeholder="Search entire store..." />
-              
-              </div>             
-              
-            </form>
-          </div>
-          <!-- Navigation Menu -->
-          <div class="  col-lg-6 d-lg-block d-none col-xl- col-xxl-6  mt-2 mL-30" >
-            <nav class="menu-style">
-              <ul class="d-flex gap-3 gap-lg-2 gap-xl-3 poppins-medium text-uppercase ">
-                <a href="./cart.html" >
-                  <li class="d-flex gap-1 fs-15"><span class="material-symbols-outlined ">
-                    shopping_cart
-                    </span>Cart</li>
-                </a>
-                <a href="./wishlist.html">
-                  <li class="d-flex gap-1 fs-15"><span class="material-symbols-outlined">
-                    favorite
-                    </span>Whishlist</li>
-                </a>
-                <a href="./orders.html">
-                  <li class="d-flex gap-1 fs-15"><span class="material-symbols-outlined">
-                    package_2
-                    </span>Orders</li>
-                </a>
-                <a href="./profile.html">
-                  <li class="d-flex gap-1 fs-15"><span class="material-symbols-outlined">
-                    person
-                    </span>Profile</li>
-                </a>
-               <a href="./settings.html">
-                <li class="d-flex gap-1 fs-15"><span class="material-symbols-outlined">
-                  settings
-                  </span>Settings</li>
-               </a>
-               <!-- <a href="">
+  <body>
+    <div class="main align-items-center" style="margin-bottom: 70px">
+      <header class="sticky-bar stick pt-3">
+        <!-- Desktop View -->
+        <div class="container-fluid px-5">
+          <div class="row">
+            <!-- Logo -->
+            <div class="col-2 d-lg-block d-none" style="margin-left: -10px">
+              <a href="./Home.html">
+                <img
+                  src="/assets/Images/logowrk.png"
+                  class="img-fluid"
+                  style="width: 150px; margin-top: -8px"
+                  alt=""
+                />
+              </a>
+            </div>
+            <!-- Search Form -->
+            <div class="col-3 col-lg-3 col-xl-3 col-xxl-4 d-lg-block d-none">
+              <form class="search-form" action="#">
+                <div
+                  class="d-flex align-items-center"
+                  style="border: 1px solid rgba(0, 0, 0, 0.119)"
+                >
+                  <span class="material-symbols-outlined mx-1"> search </span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    style="border-radius: 0"
+                    placeholder="Search entire store..."
+                  />
+                </div>
+              </form>
+            </div>
+            <!-- Navigation Menu -->
+            <div
+              class="col-lg-6 d-lg-block d-none col-xl- col-xxl-6 mt-2 mL-30"
+            >
+              <nav class="menu-style">
+                <ul
+                  class="d-flex gap-3 gap-lg-2 gap-xl-3 poppins-medium text-uppercase"
+                >
+                  <a href="./cart.html">
+                    <li class="d-flex gap-1 fs-15">
+                      <span class="material-symbols-outlined">
+                        shopping_cart </span
+                      >Cart
+                    </li>
+                  </a>
+                  <a href="./wishlist.html">
+                    <li class="d-flex gap-1 fs-15">
+                      <span class="material-symbols-outlined"> favorite </span
+                      >Whishlist
+                    </li>
+                  </a>
+                  <a href="./orders.html">
+                    <li class="d-flex gap-1 fs-15">
+                      <span class="material-symbols-outlined"> package_2 </span
+                      >Orders
+                    </li>
+                  </a>
+                  <a href="./profile.html">
+                    <li class="d-flex gap-1 fs-15">
+                      <span class="material-symbols-outlined"> person </span
+                      >Profile
+                    </li>
+                  </a>
+                  <a href="./settings.html">
+                    <li class="d-flex gap-1 fs-15">
+                      <span class="material-symbols-outlined"> settings </span
+                      >Settings
+                    </li>
+                  </a>
+                  <!-- <a href="">
                 <button class="btn">Login</button>
               </a> -->
 
-                <a href="/views/User/login.html">
-                  <li class="btn btn-dark fw-semibold px-4 fs-15" style="margin-top: -7px; border-radius: 0;">Login
-                  </li>
-                </a>
-              </ul>
-            </nav>
+                  <a href="/views/User/login.html">
+                    <li
+                      class="btn btn-dark fw-semibold px-4 fs-15"
+                      style="margin-top: -7px; border-radius: 0"
+                    >
+                      Login
+                    </li>
+                  </a>
+                </ul>
+              </nav>
+            </div>
           </div>
         </div>
-      </div>
-      <!-- End Desktop View -->
+        <!-- End Desktop View -->
 
-      <div id="mySidebar" class="sidebar">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-        <a href="./cart.html" >
-            <li class="d-flex mt-2 mb-2 ms-3"><span class="material-symbols-outlined me-1">
-              shopping_cart
-              </span>Cart</li>
+        <div id="mySidebar" class="sidebar">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >×</a
+          >
+          <a href="./cart.html">
+            <li class="d-flex mt-2 mb-2 ms-3">
+              <span class="material-symbols-outlined me-1"> shopping_cart </span
+              >Cart
+            </li>
           </a>
           <a href="./wishlist.html">
-            <li class="d-flex mb-2 ms-3"><span class="material-symbols-outlined me-1">
-              favorite
-              </span>Whishlist</li>
+            <li class="d-flex mb-2 ms-3">
+              <span class="material-symbols-outlined me-1"> favorite </span
+              >Whishlist
+            </li>
           </a>
           <a href="./orders.html">
-            <li class="d-flex mb-2 ms-3"><span class="material-symbols-outlined me-1">
-              package_2
-              </span>Orders</li>
+            <li class="d-flex mb-2 ms-3">
+              <span class="material-symbols-outlined me-1"> package_2 </span
+              >Orders
+            </li>
           </a>
           <a href="./profile.html">
-            <li class="d-flex mb-2 ms-3"><span class="material-symbols-outlined me-1">
-              person
-              </span>Profile</li>
+            <li class="d-flex mb-2 ms-3">
+              <span class="material-symbols-outlined me-1"> person </span
+              >Profile
+            </li>
           </a>
           <a href="./settings.html ">
-            <li class="d-flex mb-2 ms-3"><span class="material-symbols-outlined me-1">
-              settings
-              </span>Settings</li>
-           </a>
-           <a href="/views/User/login.html">
-            <li class="btn btn-dark fw-semibold px-4 ms-3 mt-3 mb-2" style="margin-top: -7px; border-radius: 0;">Login
+            <li class="d-flex mb-2 ms-3">
+              <span class="material-symbols-outlined me-1"> settings </span
+              >Settings
             </li>
-          </a> 
+          </a>
+          <a href="/views/User/login.html">
+            <li
+              class="btn btn-dark fw-semibold px-4 ms-3 mt-3 mb-2"
+              style="margin-top: -7px; border-radius: 0"
+            >
+              Login
+            </li>
+          </a>
+        </div>
 
-      </div>
+        <!-- Mobile View -->
+        <div class="container-fluid text-center">
+          <div class="row align-items-center justify-content-evenly">
+            <!-- Dropdown Button for Mobile -->
+            <div class="col-3 d-md-block d-lg-none ms-3 me-0">
+              <div class="dropdown">
+                <button class="openbtn" onclick="openNav()">
+                  <span class="material-symbols-outlined"> menu </span>
+                </button>
 
-      <!-- Mobile View -->
-      <div class="container-fluid text-center">
-        <div class="row align-items-center justify-content-evenly">
-          <!-- Dropdown Button for Mobile -->
-          <div class="col-3 d-md-block d-lg-none ms-3 me-0">
-            <div class="dropdown ">
-                <button class="openbtn" onclick="openNav()"><span class="material-symbols-outlined">
-                    menu
-                    </span></button>  
-
-              <!-- Dropdown Menu -->
-             
+                <!-- Dropdown Menu -->
+              </div>
             </div>
-            
-          </div>
-          <div class="col-4 d-md-block d-lg-none ms-auto col-md-4">
-            <a href="./Home.html">
-              <img src="/assets/Images/logowrk.png" class="img-fluid" style="width:150px " alt="" />
-            </a>
-          </div>
-          <div class="col-4 d-md-block d-lg-none pe-3 ms-auto me-0 col-md-4">
-            <box-icon name='cart'></box-icon>
-            <!-- <a href="/views/User/login.html" class="btn btn-dark fw-semibold ms-1" style="margin-top: -7px; border-radius: 0;">
+            <div class="col-4 d-md-block d-lg-none ms-auto col-md-4">
+              <a href="./Home.html">
+                <img
+                  src="/assets/Images/logowrk.png"
+                  class="img-fluid"
+                  style="width: 150px"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div class="col-4 d-md-block d-lg-none pe-3 ms-auto me-0 col-md-4">
+              <box-icon name="cart"></box-icon>
+              <!-- <a href="/views/User/login.html" class="btn btn-dark fw-semibold ms-1" style="margin-top: -7px; border-radius: 0;">
               Login
             </a> -->
-           
-          </div>
-          <div class=" col-4 d-md-block d-lg-none col-md-4">
-            
-          </div>
-
-        </div>
-      </div>
-      <!-- End Mobile View -->
-    </header>
-
-   
-
-  </div>
-
-
-<div class="container   ">
-   <div class="row  mb-4">
-    
-        <div class=" col-sm-12 col-md-4 col-lg-4  me-5 pe-5 ms-4">
-            <img src="/assets/Images/ed031-yellow-1_1684916982-888800511753.jpg" class="img-fluid"   height="" alt="">
-        </div>
-        <div class=" me-3 col-11 col-sm-12 col-md-6 col-lg-6 ms-3 mt-5  mt-md-0 ">
-            <h4 class=" poppins-semibold">ANNE KLEIN</h4>
-            <h6>Women Brand Logo Printed Zip Around Wallet</h6>
-           
-            <div class="mt-3 d-flex">
-                <h4 class="poppins-bold">₹626</h4>
-                <h5 class="ms-3">MRP <span class="" ><s>₹1899</s></span> <span class="fw-semibold" style="color: #6f4e37;">(67% OFF)</span></h5>
             </div>
-            <h6 class="fw-bold mb-3" style="color: #6f4e37;">inclusive of all taxes</h6>
-            <!-- <span class="mb-5 d-flex">Qty: 
+            <div class="col-4 d-md-block d-lg-none col-md-4"></div>
+          </div>
+        </div>
+        <!-- End Mobile View -->
+      </header>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row mb-4">
+        <div class="col-sm-4 col-12 col-md-4 col-lg-4 mt- mt-md-5">
+          <img
+            src="/assets/Images/ed031-yellow-1_1684916982-888800511753.jpg"
+            class="img-fluid"
+            height=""
+            alt=""
+          />
+        </div>
+        <div class="me-3 col-11 col-sm-6 col-md-6 col-lg-6 ms-3 mt-3 mt-md-5">
+          <h4 class="poppins-semibold">ANNE KLEIN</h4>
+          <h6>Women Brand Logo Printed Zip Around Wallet</h6>
+
+          <div class="mt-3 d-flex">
+            <h4 class="poppins-bold">₹626</h4>
+            <h5 class="ms-3">
+              MRP <span class=""><s>₹1899</s></span>
+              <span class="fw-semibold" style="color: #6f4e37">(67% OFF)</span>
+            </h5>
+          </div>
+          <h6 class="fw-bold mb-3" style="color: #6f4e37">
+            inclusive of all taxes
+          </h6>
+          <!-- <span class="mb-5 d-flex">Qty: 
               <div class="qty-input mx-3">
                   <div>
                       <a onclick="decreaseQuantity()" class="quantity-button" id="minusButton" >
@@ -199,229 +254,319 @@
                   </div>
               </div>
           </span> -->
-            <hr>
-            <h6 class="poppins-bold mt-5">Product Details</h6>
-            <p class="text-black-50 me-4  " style="text-align: justify;">Beige solid sling bag, with embellished detail1 main compartment, has a 
-                twist closure, 1 external pocket, 1 inner pocketsWith a non-detachable sling strap
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem nobis sunt ipsa 
-                provident minus assumenda maiores libero ea ad molestias quisquam quaerat ab,
-                 architecto eum obcaecati? Optio numquam ex facilis? Lorem ipsum dolor sit amet consectetur,
-                  adipisicing elit. Illum optio repellendus culpa rerum minus dolorum, consequatur aliquid quo, 
-                 
+          <hr />
+          <h6 class="poppins-bold mt-5">Product Details</h6>
+          <p class="text-black-50 me-4" style="text-align: justify">
+            Beige solid sling bag, with embellished detail1 main compartment,
+            has a twist closure, 1 external pocket, 1 inner pocketsWith a
+            non-detachable sling strap Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Voluptatem nobis sunt ipsa provident minus
+            assumenda maiores libero ea ad molestias quisquam quaerat ab,
+            architecto eum obcaecati? Optio numquam ex facilis? Lorem ipsum
+            dolor sit amet consectetur, adipisicing elit. Illum optio
+            repellendus culpa rerum minus dolorum, consequatur aliquid quo,
+
             <!-- <div class="d-flex gap-4 mt-5 flex-column flex-md-row"> -->
-              <div class="d-flex gap-4 mt-5 d-md-block d-none">
-                <a href="./cart.html" class="btn btn-dark text-uppercase poppins-medium" style="border-radius: 0;">add to cart</a> 
-                <a href="./wishlist.html" class="btn btn-dark text-uppercase poppins-medium px-4" style="border-radius: 0;">wishlist</a>
-          
-            </div>
-            <div class="container-fluid pt-1 "  >
-              <div class="d-flex justify-content-evenly" >
-                <div class="d-sm-block d-md-none fixed-bottom sticky-cartButtn text-center" style="border: 1px solid rgba(0, 0, 0, 0.208); box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.438);">
-                  <a href="./cart.html" class="btn btn-dark text-uppercase poppins-medium col- px-4 ms-3 my-2" style="border-radius: 50px;">Add to Cart</a> 
-                  <a href="./wishlist.html" class="btn btn-dark text-uppercase poppins-medium col- ps-5 pe-5 my-2" style="border-radius: 50px;">Wishlist</a>
-                </div>
+          </p>
+
+          <div class="d-flex gap-4 mt-5 d-md-block d-none">
+            <a
+              href="./cart.html"
+              class="btn btn-dark text-uppercase poppins-medium"
+              style="border-radius: 0"
+              >add to cart</a
+            >
+            <a
+              href="./wishlist.html"
+              class="btn btn-dark text-uppercase poppins-medium px-4"
+              style="border-radius: 0"
+              >wishlist</a
+            >
+          </div>
+          <div class="container-fluid pt-1">
+            <div class="d-flex justify-content-evenly">
+              <div
+                class="d-sm-block d-md-none fixed-bottom sticky-cartButtn text-center py-3 gap-3"
+                style="
+                  border: 1px solid rgba(0, 0, 0, 0.208);
+                  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.438);
+                "
+              >
+                <a
+                  href="./cart.html"
+                  class="btn btn-dark text-uppercase poppins-medium col-5"
+                  style="border-radius: 50px"
+                  >Add to Cart</a
+                >
+                <a
+                  href="./wishlist.html"
+                  class="btn btn-dark text-uppercase poppins-medium col-5"
+                  style="border-radius: 50px"
+                  >Wishlist</a
+                >
               </div>
             </div>
-            
-            
-          
+          </div>
         </div>
-    
-   </div>
-</div>
-   
-<!-- Category Buttons -->
-<section class="mt-5">
-  <div class="tab-scroller " >
-    <i class="tab-scroller-arrow left-arrow d-lg-none" >
-       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16" >
-       <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
-     </svg>
-    </i>
-    <i class="tab-scroller-arrow right-arrow d-lg-none">
-       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-          <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-        </svg>
-    </i>
-    <ul class="nav nav-pills" id="pills-tab" role="tablist">
-       <li class="nav-item" role="presentation">
-         <a href="./categorypage.html" class="btn  btn-dark me-2 ms-1 " >Category_0</a>
-       </li>
-       <li class="nav-item" role="presentation">
-         <a href="./categorypage.html" class="btn  btn-dark mx-2 ">Category_1</a>
-       </li>
-       <li class="nav-item" role="presentation">
-         <a href="./categorypage.html" class="btn  btn-dark mx-2 " >Category_2</a>
-       </li>
-       <li class="nav-item" role="presentation">
-         <a href="./categorypage.html" class="btn  btn-dark mx-2 " >Category_3</a>
-       </li>
-       <li class="nav-item" role="presentation">
-        <a href="./categorypage.html" class="btn  btn-dark mx-2 ">Category_1</a>
-      </li>
-      <li class="nav-item" role="presentation">
-        <a href="./categorypage.html" class="btn  btn-dark  mx-2" >Category_2</a>
-      </li>
-      <li class="nav-item" role="presentation">
-        <a href="./categorypage.html" class="btn  btn-dark mx-2 " >Category_3</a>
-      </li>
-      
-      
-     </ul>
- </div>
-</section>
-<!-- similar product section  -->
-<section class="mt-1 ms-5 me-3 mt-5 d-flex gap-3 ">
-    <div class="container-fluid ">
-      <div class="row">
-        <h4 class="poppins-bold mt-4">Similar Products</h4>
-        
-          <div class="card mt-4 cardItem  " style="width: 15rem;">
+      </div>
+    </div>
+
+    <!-- Category Buttons -->
+
+    <!-- similar product section  -->
+    <section class="mt-1 ms-5 me-3 mt-5 d-flex gap-3">
+      <div class="container-fluid">
+        <div class="row">
+          <!-- <h4 class="poppins-bold mt-4">Similar Products</h4> -->
+
+          <div class="card mt-4 cardItem" style="width: 15rem">
             <a href="./itemDetails.html">
-                <img src="/assets/Images/card_img.png" class="card-img-top" alt="...">
+              <img
+                src="/assets/Images/card_img.png"
+                class="card-img-top"
+                alt="..."
+              />
             </a>
-            <div class="wishlist-container position-absolute end-0 ">
-                <a href="" class="btn wishlist-btn "><span class="material-symbols-outlined">
-                        favorite
-                    </span></a>
+            <div class="wishlist-container position-absolute end-0">
+              <a href="" class="btn wishlist-btn"
+                ><span class="material-symbols-outlined"> favorite </span></a
+              >
             </div>
             <div class="card-body ps-0 pe-0">
-                <h6 class="card-title poppins-semibold">Product1</h6>
-                <p class="card-text poppins-light cardText">Some quick example content.</p>
-                <p class="cardText" style="margin-top: -13px;"><span class="fw-bold">Rs.1999</span> <span style="text-decoration: line-through; color: rgba(0, 0, 0, 0.537);"> Rs.3999</span> <span style="color: #6f4e37ae;">(Rs.2000 OFF)</span></p>
-            </div>
-        </div>
-        <div class="card mt-4 cardItem  " style="width: 15rem;">
-          <a href="./itemDetails.html">
-              <img src="/assets/Images/card_img.png" class="card-img-top" alt="...">
-          </a>
-          <div class="wishlist-container position-absolute end-0 ">
-              <a href="" class="btn wishlist-btn "><span class="material-symbols-outlined">
-                      favorite
-                  </span></a>
-          </div>
-          <div class="card-body ps-0 pe-0">
               <h6 class="card-title poppins-semibold">Product1</h6>
-              <p class="card-text poppins-light cardText">Some quick example content.</p>
-              <p class="cardText" style="margin-top: -13px;"><span class="fw-bold">Rs.1999</span> <span style="text-decoration: line-through; color: rgba(0, 0, 0, 0.537);"> Rs.3999</span> <span style="color: #6f4e37ae;">(Rs.2000 OFF)</span></p>
+              <p class="card-text poppins-light cardText">
+                Some quick example content.
+              </p>
+              <p class="cardText" style="margin-top: -13px">
+                <span class="fw-bold">Rs.1999</span>
+                <span
+                  style="
+                    text-decoration: line-through;
+                    color: rgba(0, 0, 0, 0.537);
+                  "
+                >
+                  Rs.3999</span
+                >
+                <span style="color: #6f4e37ae">(Rs.2000 OFF)</span>
+              </p>
+            </div>
           </div>
-      </div>
-      <div class="card mt-4 cardItem  " style="width: 15rem;">
-        <a href="./itemDetails.html">
-            <img src="/assets/Images/card_img.png" class="card-img-top" alt="...">
-        </a>
-        <div class="wishlist-container position-absolute end-0 ">
-            <a href="" class="btn wishlist-btn "><span class="material-symbols-outlined">
-                    favorite
-                </span></a>
+          <div class="card mt-4 cardItem" style="width: 15rem">
+            <a href="./itemDetails.html">
+              <img
+                src="/assets/Images/card_img.png"
+                class="card-img-top"
+                alt="..."
+              />
+            </a>
+            <div class="wishlist-container position-absolute end-0">
+              <a href="" class="btn wishlist-btn"
+                ><span class="material-symbols-outlined"> favorite </span></a
+              >
+            </div>
+            <div class="card-body ps-0 pe-0">
+              <h6 class="card-title poppins-semibold">Product1</h6>
+              <p class="card-text poppins-light cardText">
+                Some quick example content.
+              </p>
+              <p class="cardText" style="margin-top: -13px">
+                <span class="fw-bold">Rs.1999</span>
+                <span
+                  style="
+                    text-decoration: line-through;
+                    color: rgba(0, 0, 0, 0.537);
+                  "
+                >
+                  Rs.3999</span
+                >
+                <span style="color: #6f4e37ae">(Rs.2000 OFF)</span>
+              </p>
+            </div>
+          </div>
+          <div class="card mt-4 cardItem" style="width: 15rem">
+            <a href="./itemDetails.html">
+              <img
+                src="/assets/Images/card_img.png"
+                class="card-img-top"
+                alt="..."
+              />
+            </a>
+            <div class="wishlist-container position-absolute end-0">
+              <a href="" class="btn wishlist-btn"
+                ><span class="material-symbols-outlined"> favorite </span></a
+              >
+            </div>
+            <div class="card-body ps-0 pe-0">
+              <h6 class="card-title poppins-semibold">Product1</h6>
+              <p class="card-text poppins-light cardText">
+                Some quick example content.
+              </p>
+              <p class="cardText" style="margin-top: -13px">
+                <span class="fw-bold">Rs.1999</span>
+                <span
+                  style="
+                    text-decoration: line-through;
+                    color: rgba(0, 0, 0, 0.537);
+                  "
+                >
+                  Rs.3999</span
+                >
+                <span style="color: #6f4e37ae">(Rs.2000 OFF)</span>
+              </p>
+            </div>
+          </div>
+          <div class="card mt-4 cardItem" style="width: 15rem">
+            <a href="./itemDetails.html">
+              <img
+                src="/assets/Images/card_img.png"
+                class="card-img-top"
+                alt="..."
+              />
+            </a>
+            <div class="wishlist-container position-absolute end-0">
+              <a href="" class="btn wishlist-btn"
+                ><span class="material-symbols-outlined"> favorite </span></a
+              >
+            </div>
+            <div class="card-body ps-0 pe-0">
+              <h6 class="card-title poppins-semibold">Product1</h6>
+              <p class="card-text poppins-light cardText">
+                Some quick example content.
+              </p>
+              <p class="cardText" style="margin-top: -13px">
+                <span class="fw-bold">Rs.1999</span>
+                <span
+                  style="
+                    text-decoration: line-through;
+                    color: rgba(0, 0, 0, 0.537);
+                  "
+                >
+                  Rs.3999</span
+                >
+                <span style="color: #6f4e37ae">(Rs.2000 OFF)</span>
+              </p>
+            </div>
+          </div>
+          <div class="card mt-4 cardItem" style="width: 15rem">
+            <a href="./itemDetails.html">
+              <img
+                src="/assets/Images/card_img.png"
+                class="card-img-top"
+                alt="..."
+              />
+            </a>
+            <div class="wishlist-container position-absolute end-0">
+              <a href="" class="btn wishlist-btn"
+                ><span class="material-symbols-outlined"> favorite </span></a
+              >
+            </div>
+            <div class="card-body ps-0 pe-0">
+              <h6 class="card-title poppins-semibold">Product1</h6>
+              <p class="card-text poppins-light cardText">
+                Some quick example content.
+              </p>
+              <p class="cardText" style="margin-top: -13px">
+                <span class="fw-bold">Rs.1999</span>
+                <span
+                  style="
+                    text-decoration: line-through;
+                    color: rgba(0, 0, 0, 0.537);
+                  "
+                >
+                  Rs.3999</span
+                >
+                <span style="color: #6f4e37ae">(Rs.2000 OFF)</span>
+              </p>
+            </div>
+          </div>
+          <div class="card mt-4 cardItem" style="width: 15rem">
+            <a href="./itemDetails.html">
+              <img
+                src="/assets/Images/card_img.png"
+                class="card-img-top"
+                alt="..."
+              />
+            </a>
+            <div class="wishlist-container position-absolute end-0">
+              <a href="" class="btn wishlist-btn"
+                ><span class="material-symbols-outlined"> favorite </span></a
+              >
+            </div>
+            <div class="card-body ps-0 pe-0">
+              <h6 class="card-title poppins-semibold">Product1</h6>
+              <p class="card-text poppins-light cardText">
+                Some quick example content.
+              </p>
+              <p class="cardText" style="margin-top: -13px">
+                <span class="fw-bold">Rs.1999</span>
+                <span
+                  style="
+                    text-decoration: line-through;
+                    color: rgba(0, 0, 0, 0.537);
+                  "
+                >
+                  Rs.3999</span
+                >
+                <span style="color: #6f4e37ae">(Rs.2000 OFF)</span>
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="card-body ps-0 pe-0">
-            <h6 class="card-title poppins-semibold">Product1</h6>
-            <p class="card-text poppins-light cardText">Some quick example content.</p>
-            <p class="cardText" style="margin-top: -13px;"><span class="fw-bold">Rs.1999</span> <span style="text-decoration: line-through; color: rgba(0, 0, 0, 0.537);"> Rs.3999</span> <span style="color: #6f4e37ae;">(Rs.2000 OFF)</span></p>
-        </div>
-    </div>
-    <div class="card mt-4 cardItem  " style="width: 15rem;">
-      <a href="./itemDetails.html">
-          <img src="/assets/Images/card_img.png" class="card-img-top" alt="...">
-      </a>
-      <div class="wishlist-container position-absolute end-0 ">
-          <a href="" class="btn wishlist-btn "><span class="material-symbols-outlined">
-                  favorite
-              </span></a>
       </div>
-      <div class="card-body ps-0 pe-0">
-          <h6 class="card-title poppins-semibold">Product1</h6>
-          <p class="card-text poppins-light cardText">Some quick example content.</p>
-          <p class="cardText" style="margin-top: -13px;"><span class="fw-bold">Rs.1999</span> <span style="text-decoration: line-through; color: rgba(0, 0, 0, 0.537);"> Rs.3999</span> <span style="color: #6f4e37ae;">(Rs.2000 OFF)</span></p>
-      </div>
-  </div>
-  <div class="card mt-4 cardItem  " style="width: 15rem;">
-    <a href="./itemDetails.html">
-        <img src="/assets/Images/card_img.png" class="card-img-top" alt="...">
-    </a>
-    <div class="wishlist-container position-absolute end-0 ">
-        <a href="" class="btn wishlist-btn "><span class="material-symbols-outlined">
-                favorite
-            </span></a>
-    </div>
-    <div class="card-body ps-0 pe-0">
-        <h6 class="card-title poppins-semibold">Product1</h6>
-        <p class="card-text poppins-light cardText">Some quick example content.</p>
-        <p class="cardText" style="margin-top: -13px;"><span class="fw-bold">Rs.1999</span> <span style="text-decoration: line-through; color: rgba(0, 0, 0, 0.537);"> Rs.3999</span> <span style="color: #6f4e37ae;">(Rs.2000 OFF)</span></p>
-    </div>
-  </div>
-  <div class="card mt-4 cardItem  " style="width: 15rem;">
-    <a href="./itemDetails.html">
-        <img src="/assets/Images/card_img.png" class="card-img-top" alt="...">
-    </a>
-    <div class="wishlist-container position-absolute end-0 ">
-        <a href="" class="btn wishlist-btn "><span class="material-symbols-outlined">
-                favorite
-            </span></a>
-    </div>
-    <div class="card-body ps-0 pe-0">
-        <h6 class="card-title poppins-semibold">Product1</h6>
-        <p class="card-text poppins-light cardText">Some quick example content.</p>
-        <p class="cardText" style="margin-top: -13px;"><span class="fw-bold">Rs.1999</span> <span style="text-decoration: line-through; color: rgba(0, 0, 0, 0.537);"> Rs.3999</span> <span style="color: #6f4e37ae;">(Rs.2000 OFF)</span></p>
-    </div>
-  </div>
-
-      
-      
-      </div>
-    </div>
-    
-    
-     
     </section>
 
- <!-- footer  -->
-    <div class="container-fluid my-5 ">
-      <hr>
+    <!-- footer  -->
+    <div class="container-fluid my-5">
+      <hr />
 
-      <footer class=" text-center text-lg-start poppins-medium " >
+      <footer class="text-center text-lg-start poppins-medium">
         <!-- Grid container -->
         <div class="container p-4">
           <!--Grid row-->
           <div class="row my-4">
             <!--Grid column-->
             <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-    
-              <div class=" bg-white shadow-1-strong d-flex  justify-content-center mx-auto mx-sm-auto mx-lg-0 " style="width: 150px; height: 150px;">
-                <img src="/assets/Images/logowrk.png" height="70" alt=""
-                      />
+              <div
+                class="bg-white shadow-1-strong d-flex justify-content-center mx-auto mx-sm-auto mx-lg-0"
+                style="width: 150px; height: 150px"
+              >
+                <img src="/assets/Images/logowrk.png" height="70" alt="" />
               </div>
-    
-              <p class="" style="margin-top: -70px; margin-left: -8px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-    
-             <div class="mx-auto d-flex justify-content-center">
-                <ul class="list-unstyled d-flex flex-row  " style="margin-left: -14px;">
-                    <li>
-                      <a class=" px-2" href="#!">
-                        <i class="fab fa-facebook-square"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a class=" px-2" href="#!">
-                        <i class="fab fa-instagram"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a class=" ps-2" href="#!">
-                        <i class="fab fa-youtube"></i>
-                      </a>
-                    </li>
-                  </ul>
-             </div>
-    
+
+              <p class="" style="margin-top: -70px; margin-left: -8px">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+
+              <div class="mx-auto d-flex justify-content-center">
+                <ul
+                  class="list-unstyled d-flex flex-row"
+                  style="margin-left: -14px"
+                >
+                  <li>
+                    <a class="px-2" href="#!">
+                      <i class="fab fa-facebook-square"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="px-2" href="#!">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="ps-2" href="#!">
+                      <i class="fab fa-youtube"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
             <!--Grid column-->
-    
+
             <!--Grid column-->
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0 ">
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
               <h5 class="text-uppercase mb-4 ms-4">Links</h5>
-    
+
               <ul class="list-unstyled">
                 <li class="mb-2">
                   <a href="#!" class="ms-4">Terms of Services</a>
@@ -435,15 +580,14 @@
                 <li class="mb-2">
                   <a href="#!" class="ms-4">About Us</a>
                 </li>
-               
               </ul>
             </div>
             <!--Grid column-->
-    
+
             <!--Grid column-->
             <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
               <h5 class="text-uppercase mb-4">Community</h5>
-    
+
               <ul class="list-unstyled">
                 <li class="mb-2">
                   <a href="#!" class="">Discord</a>
@@ -457,24 +601,28 @@
                 <li class="mb-2">
                   <a href="#!" class="">Reddit</a>
                 </li>
-                
               </ul>
             </div>
             <!--Grid column-->
-    
+
             <!--Grid column-->
             <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
               <h5 class="text-uppercase mb-4">Contact</h5>
-    
+
               <ul class="list-unstyled">
                 <li>
-                  <p><i class="fas fa-map-marker-alt pe-2"></i>Warsaw, 57 Street, Poland</p>
+                  <p>
+                    <i class="fas fa-map-marker-alt pe-2"></i>Warsaw, 57 Street,
+                    Poland
+                  </p>
                 </li>
                 <li>
                   <p><i class="fas fa-phone pe-2"></i>+ 01 234 567 89</p>
                 </li>
                 <li>
-                  <p><i class="fas fa-envelope pe-2 mb-0"></i>contact@example.com</p>
+                  <p>
+                    <i class="fas fa-envelope pe-2 mb-0"></i>contact@example.com
+                  </p>
                 </li>
               </ul>
             </div>
@@ -483,43 +631,36 @@
           <!--Grid row-->
         </div>
         <!-- Grid container -->
-    
+
         <!-- Copyright -->
-        <div class="text-center p-3 text-white" style="background-color: rgb(0, 0, 0)">
+        <div
+          class="text-center p-3 text-white"
+          style="background-color: rgb(0, 0, 0)"
+        >
           © 2024 Copyright:
-          <a class="" style="color: #ffffff;" href="https://mdbootstrap.com/">Elegantpurse.com</a>
+          <a class="" style="color: #ffffff" href="https://mdbootstrap.com/"
+            >Elegantpurse.com</a
+          >
         </div>
         <!-- Copyright -->
       </footer>
-
-     
     </div>
 
-    
-
-
     <script>
-        function openNav() {
-          document.getElementById("mySidebar").style.width = "250px";
-          document.getElementById("main").style.marginLeft = "250px";
-        }
-        
-        function closeNav() {
-          document.getElementById("mySidebar").style.width = "0";
-          document.getElementById("main").style.marginLeft= "0";
-        }
-        </script>
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
 
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+      }
+    </script>
 
- 
-
- 
-
-  
-
-  <!-- jQuery -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <!-- Bootstrap Bundle JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
-</body>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

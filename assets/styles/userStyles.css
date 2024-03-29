@@ -286,7 +286,7 @@ a:hover {
 .wishlist-btn {
   display: none;
  /* margin-left: 90px; */
-  transform: translateX(-49%);
+  /* transform: translateX(-49%); */
   /* background: rgba(255, 255, 255, 0.8); */
   /* border: 1px solid #ccc; */
   border-radius: 5px;

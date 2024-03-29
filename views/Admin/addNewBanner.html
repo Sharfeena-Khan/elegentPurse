@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title>Admin Pannel- Order List</title>
+    <title>Admin Pannel- Add Banner</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -73,7 +74,6 @@
                     <a href="./product.html" class="nav-item nav-link"><i class="fa-solid fa-suitcase-rolling" style="color: #000000;"></i></i>Products</a>
                     <a href="./category.html" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Category</a>
                     <a href="./orders.html" class="nav-item nav-link"><i class="fa-solid fa-box-open me-2" style="color: #000000;"></i>Orders</a>
-                    <a href="./banner.html" class="nav-item nav-link"><i class="fa-solid fa-users" style="color: #000000;"></i>Banner</a>
                     <a href="./customers.html" class="nav-item nav-link"><i class="fa-solid fa-users" style="color: #000000;"></i>Customers</a>
                     
                 </div>
@@ -139,143 +139,65 @@
             <!-- Navbar End -->
 
 
-            <!-- Sale & Revenue Start -->
+           
             <div class="container-fluid pt-4 px-4">
                 <div class="row g-4">
                     <div class="container d-flex mb-5">
                         <div >
-                          <h5><strong> Customers</strong> </h5>
-                         <span class="opacity-50"> Dashboard > Customers List</span> 
+                          <h5><strong> Banner</strong> </h5>
+                         <span class="opacity-50"> Dashboard > Add New Banner </span> 
                         </div>
-                        <!-- <div class="ms-auto me-5"> 
-                         <a href="#" class="btn text-white me-auto  btn-dark" ><i class="fa-regular fa-plus" style="color: #ffffff;"></i> Add Product</a>
-                        </div> -->
+                       
                       </div>
-              
-                    
-                    <div>
-                        <table class="table" id="myTable">
-                            <colgroup>
-                                <col style="width: 200px;" /> <!-- Column for name -->
-                                <col style="width: 110px;" /> <!-- Column for email -->
-                                <col style="width: 180px;" /> <!-- Column for phn -->
-                                
-                                <col style="width: 80px;" />  <!-- Column for Status -->
-                               
-                                <col style="width: 130px;" /> <!-- Column for Action -->
-                              </colgroup>
-                            <thead>
-                              <tr>
-                                 <th scope="col">Name</th>
-                                <th scope="col">Email</th>
-                                <th scope="col">Phone No</th>
-                                
-                                <th scope="col">Status</th>
-                                <th scope="col">Action</th>
-                                
-                                
-                               
-                              </tr>
-                            </thead>
-                            <tbody>
-                                
-                                <tr>
+
+                      <div class="mb-5">
+                        <form action="" enctype="multipart/form-data">
+                            <div>
+                                <form action="./profile.html">
+                                    <div class="ms-3  mt-5 poppins-medium ">
+                                        <h5 class="poppins-bold">New Banner</h5> 
                                   
-                                  <td colspan="1" class="fw-semibold">
-                                    James
-                                  </td>
-                                  <td class="pt-3">james@gmail.com</td>
-                                  <td class="pt-3">0958963149</td>
-                                  
-                                  
-                                  <td class="pt-3">Active</td> 
-                                  
-                                  <td colspan="2">
-                                  
-                                  
-                                      <form action="" >
-                                        <input type="hidden" name="userId" >
-                                        <button  type="submit" class="block-button px-3 me-3" style="background: #000000; color: #ffffff; border: none; border-radius: 0px;">Block</button>
-                                      </form>
-                                    
-                                    
-                
-                                      </td>
-                                </tr>
-                                <tr>
-                                  
-                                    <td colspan="1" class="fw-semibold">
-                                     Ram
-                                    </td>
-                                    <td class="pt-3">Ram@gmail.com</td>
-                                    <td class="pt-3">0958963149</td>
-                                    
-                                    
-                                    <td class="pt-3">Block</td> 
-                                    
-                                    <td colspan="2">
-                                    
-                                    
-                                        <form action="" >
-                                          <input type="hidden" name="userId" >
-                                          <button  type="submit" class="block-button px-3 me-3" style="background: #000000; color: #ffffff; border: none; border-radius: 0px;">Active</button>
-                                        </form>
-                                      
-                                      
-                  
-                                        </td>
-                                </tr>
-                                <tr>
-                                  
-                                    <td colspan="1" class="fw-semibold">
-                                      Jimmy
-                                    </td>
-                                    <td class="pt-3">jimmy@gmail.com</td>
-                                    <td class="pt-3">0958963149</td>
-                                    
-                                    
-                                    <td class="pt-3">Active</td> 
-                                    
-                                    <td colspan="2">
-                                    
-                                    
-                                        <form action="" >
-                                          <input type="hidden" name="userId" >
-                                          <button  type="submit" class="block-button px-3 me-3" style="background: #000000; color: #ffffff; border: none; border-radius: 0px;">Block</button>
-                                        </form>
-                                      
-                                      
-                  
-                                        </td>
-                                  </tr>
-                                  <tr>
-                                    
-                                      <td colspan="1" class="fw-semibold">
-                                       Alice
-                                      </td>
-                                      <td class="pt-3">alice@gmail.com</td>
-                                      <td class="pt-3">0958963149</td>
-                                      
-                                      
-                                      <td class="pt-3">Block</td> 
-                                      
-                                      <td colspan="2">
-                                      
-                                      
-                                          <form action="" >
-                                            <input type="hidden" name="userId" >
-                                            <button  type="submit" class="block-button px-3 me-3" style="background: #000000; color: #ffffff; border: none; border-radius: 0px;">Active</button>
-                                          </form>
+                                        <div class="pt-3 pb-3 d-flex gap-4 ">
+                                            <div>
+                                                <label for="fileInput">Add Banner</label>
+                                            <input type="file" id="fileInput" class="form-control" onchange="previewImage(event)">                                      
+                                            </div>
+                                              <!-- Image preview -->
+                                            <div class="mt-3">
+                                                <img id="preview-image" src="" alt="" width="150px" >
+                                            </div>
+                                         </div>
                                         
-                                        
-                    
-                                          </td>
-                                  </tr>
+                                      
+                                       
+                                    <div class="pt-3 pb-3 col-3">
+                                        <label for="" class="">View Order : </label>
+                                        <select id="inputState" class="form-select" >
+                                            <option selected>Choose Order</option>
+                                            <option value="0">0</option>
+                                            <option value="0">1</option>
+                                            <option value="0">2</option>
+                                          </select>
+                                    </div>
+                                    <div class="pt-3 pb-3 col-3">
+                                        <p>Show Image On Carousel:</p>
+                                        <input type="checkbox" id="active" name="showImg" value="true">
+                                        <label for="">Active </label>
+                                    </div>
+                                   
+                                   
+                                 <div class="  mb-5 poppins-medium ">
+                               
+                                 <button class="btn btn-dark px-0 mt-4 px-4 text-uppercase" style="border-radius: 0;" >SAVE Banner</button>
                                 
+                                 </div>
+                                </form>
+                            </div>
+
+                        </form>
                         
-                            </tbody>
-                          </table>
                     </div>
+                   
                   
                 </div>
                 </div>
@@ -306,7 +228,7 @@
 
 
         <!-- Back to Top -->
-        <a href="#" class="btn btn-lg btn-dark btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+        <!-- <a href="#" class="btn btn-lg btn-dark btn-lg-square back-to-top mb-5"><i class="bi bi-arrow-up"></i></a> -->
     </div>
 
     <!-- JavaScript Libraries -->
@@ -328,6 +250,26 @@
     <!-- Template Javascript -->
     <script src="/assets/javascript/main.js"></script>
 
+    <script>
+        function previewImage(event) {
+            const fileInput = event.target;
+            const file = fileInput.files[0];
+            const preview = document.getElementById('preview-image');
+    
+            if (file) {
+                const reader = new FileReader();
+    
+                reader.onload = function(e) {
+                    preview.src = e.target.result;
+                }
+    
+                reader.readAsDataURL(file);
+            } else {
+                preview.src = "#";
+            }
+        }
+    </script>
+
     <!-- <script>
         $(document).ready( function () {
           $('#myTable').DataTable();
@@ -342,3 +284,9 @@
 </body>
 
 </html>
+
+
+
+
+
+
